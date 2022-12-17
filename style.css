@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* background-color: #444; */
+  /* text-align: center; */
+  color: #fff;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  /* !IMPORTANT! */
+  /* Must alter height of image, so it scales, or find new image. */
+  background-image: url("images/background.jpg"); /* Adds background image to entire page */
+  background-size: cover; /* Resizes background image to cover entire page */
+  background-position: center; /* Centers background image on page */
+  background-repeat: no-repeat; /* Prevents background image from repeating */
+  background-blend-mode: multiply;
+
+  background-color: #444;
+  text-align: center;
+  flex: 1;
+}
+
+/* App Container */
+.app-container {
+  height: fit-content;
+  width: 900px;
+}
+
+/* Questions */
+.question-container {
+  margin: 20px;
+}
+.question-container h2 {
+  margin: 10px;
+}
+
+#first-choice {
+}
+.a,
+.x,
+.y,
+.z {
+  margin-right: 20px;
+  gap: 20px;
+}
+
+/* Results */
+.result-container {
+}
+
+#result {
+  margin: 10px;
+}
+.one,
+.two,
+.three,
+.four,
+.five {
+  padding: 4px;
+}
+
+/* Buttons */
+button {
+  height: 40px;
+  width: 120px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #444;
+  font-size: 18px;
+  flex: 1;
+  gap: 20px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Smaller Screens */
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Adjust the width of the layout */
+  .app-container {
+    width: 90%;
+  }
+
+  /* Change the font size of the headings */
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Make the buttons smaller */
+  button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px;
+}
