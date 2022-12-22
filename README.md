@@ -10,3 +10,5 @@ It was designed to allow users to quickly generate a random list of exercises fo
 It works by using the math.random code in javascript once a button is clicked, to generate a random exercise from each body part's array. Pretty simple.
 
 If you contiune to press the same button it will contiune to generate a random list of exercises, incase you didn't like what it gave the first time around.
+
+![workoutgenerator](https://user-images.githubusercontent.com/115714856/209177153-36b96219-f7af-48b6-888f-74dac86840de.png)
